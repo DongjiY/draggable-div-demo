@@ -71,15 +71,6 @@ function snapToBoundingBox(e) {
 }
 
 /**
- * Calculates position on an ease in-out cubic curve
- * @param {number} x - A percentage of the way through your action is.
- * @returns {number}
- */
-function easeInOutCubic(x) {
-  return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
-}
-
-/**
  * Calculates position on an ease in-out sine curve
  * @param {number} x -  A percentage of the way through your action is.
  * @returns {number}
